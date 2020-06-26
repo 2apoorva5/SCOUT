@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">SCOUT</string>
+    <string name="app_slogan">Helps You Get A Way</string>
+    <string name="app_powered_by1">Powered by</string>
+    <string name="app_powered_by2">Developer Depository</string>
+
+    <!-- Strings for OnBoardingScreen -->
+
+    <!-- Titles -->
+    <string name="first_slide_title">Search Your Location</string>
+    <string name="second_slide_title">Make A Call</string>
+    <string name="third_slide_title">Add Missing Place</string>
+    <string name="fourth_slide_title">Sit Back &amp; Enjoy</string>
+
+    <!-- Descriptions -->
+    <string name="first_slide_desc">You can search any place nearby or within the specified city. SCOUT will display specific or all related facilities to match your search.</string>
+    <string name="second_slide_desc">SCOUT provides contact numbers of almost all the departments and facilities registered on it. You can make a booking through that as well.</string>
+    <string name="third_slide_desc">If you have a facility and you want to be part of our growing industry, then add your place on SCOUT following simple steps.</string>
+    <string name="fourth_slide_desc">SCOUT will handle everything for you. Grow your business with us without worrying about anything.</string>
+
+    <!-- Buttons -->
+    <string name="skip_btn">SKIP</string>
+    <string name="next_btn">NEXT</string>
+    <string name="lets_get_started">LET\'S GET STARTED</string>
+
+
+    <!-- Categories -->
+    <string name="hotels">Hotels</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="shops">Shops</string>
+    <string name="banks">Banks</string>
+    <string name="education">Education</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="airports">Airports</string>
+    <string name="sports">Sports</string>
+    <string name="travel">Travel</string>
+    <string name="carRent">Car Rent</string>
+
+
+    <!-- Strings for Dashboard -->
+
+    <!-- Titles and Descriptions -->
+    <string name="featured_locations">All\nFeatured\nLocations</string>
+    <string name="featured_locations_description">All the locations that are featured and having the top demand in town at the moment!</string>
+    <string name="most_viewed_locations">Most Viewed</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="search_text">Search a location</string>
+
+    <!-- Featured Locations Card Defaults -->
+    <string name="featured_item_placeholder_title">ScrapYard</string>
+    <string name="featured_item_placeholder_desc">ScrapYard is the best rated restaurant in the location at the moment.</string>
+
+    <!-- Most Viewed Locations Card Defaults -->
+    <string name="most_viewed_item_placeholder_title">Chapter7</string>
+    <string name="most_viewed_item_placeholder_desc">Chapter7 is the best rated club in the location at the moment.</string>
+
+    <!-- Strings for Navigation Menu -->
+    <string name="navHome">Home</string>
+    <string name="navSearch">Search</string>
+    <string name="navAllCategories">All Categories</string>
+    <string name="navAddMissingPlaces">Add Missing Place</string>
+    <string name="navProfileTitle">Profile</string>
+    <string name="navLogin">Log In</string>
+    <string name="navProfile">Profile</string>
+    <string name="navLogOut">Log Out</string>
+    <string name="navCategoriesTitle">Categories</string>
+    <string name="navRestaurants">Restaurants</string>
+    <string name="navHotels">Hotels</string>
+    <string name="navEducation">Education</string>
+    <string name="navShops">Shops</string>
+    <string name="navCommunicationTitle">Communication</string>
+    <string name="navShare">Share</string>
+    <string name="navRateUs">Rate Us</string>
+    <string name="navContactUs">Contact Us</string>
+    <string name="navAboutUs">About Us</string>
+    <string name="navPrivacyPolicy">Privacy Policy</string>
+
+    <!-- Exit Dialog Strings -->
+    <string name="exitDialogTitle">Exit SCOUT?</string>
+    <string name="exitDialogMessage">Do you really want to exit?</string>
+    <string name="exitDialogConfirm">YES</string>
+    <string name="exitDialogCancel">NO</string>
+
+
+    <!-- All Categories Strings -->
+    <string name="allCategoriesTitle">All Categories</string>
+
+
+    <!-- Retailer StartUp Screen Strings -->
+    <string name="retailerStartUpTitle">GROW YOUR BUSINESS</string>
+    <string name="retailerStartUpMessage">SCOUT will help you grow your business and gain reach by taking it online.</string>
+    <string name="retailerStartUpLoginBtn">LOGIN</string>
+    <string name="retailerStartUpSignUpBtn">SIGN UP</string>
+    <string name="retailerStartUpHowWeWork">How We Work?</string>
+
+
+    <!-- RetailerLogin Strings -->
+    <string name="retailerLoginTitle">LOGIN</string>
+    <string name="retailerLoginMessage">Sign in to continue!</string>
+    <string name="retailerLoginUsernameHint">Username</string>
+    <string name="retailerLoginPasswordHint">Password</string>
+    <string name="retailerLoginRememberMeCheckBox">Remember Me</string>
+    <string name="retailerLoginForgotPassword">Forgot Password?</string>
+    <string name="retailerLoginBtn">LOGIN</string>
+    <string name="retailerLoginCreateAccountMsg">Don\'t have an account?</string>
+    <string name="retailerLoginCreateAccountBtn">Create Account</string>
+
+
+    <!-- RetailerSignUp Strings -->
+    <string name="retailerSignUpTitle">Create Account</string>
+    <string name="retailerSignUpMessage">Sign up to get started!</string>
+    <string name="retailerSignUpNameHint">Name</string>
+    <string name="retailerSignUpUserNameHint">Username</string>
+    <string name="retailerSignUpEmailHint">Email</string>
+    <string name="retailerSignUpMobileHint">Mobile</string>
+    <string name="retailerSignUpCreatePasswordHint">Create Password</string>
+    <string name="retailerSignUpConfirmPasswordHint">Confirm Password</string>
+    <string name="retailerSignUpNextBtn">NEXT</string>
+    <string name="retailerSignUpLoginMsg">Already have an account?</string>
+    <string name="retailerSignUpLoginBtn">Sign in</string>
+    <string name="retailerSignUpChooseGenderTxt">Choose Gender</string>
+    <string name="retailerSignUpMale">Male</string>
+    <string name="retailerSignUpFemale">Female</string>
+    <string name="retailerSignUpOther">Other</string>
+    <string name="retailerSignUpDOBTxt">Select Date of Birth</string>
+    <string name="retailerSignUpMobileMsg">A 6-digit verification code will be sent to the mobile number. Standard rates may apply.</string>
+
+
+    <!-- Retailer VerifyOTP Strings -->
+    <string name="verifyOTPTitle">CODE VERIFICATION</string>
+    <string name="verifyOTPMessage">Enter the verification code sent to\n+919915462971</string>
+    <string name="verifyOTPBtn">VERIFY</string>
+
+
+    <!-- Retailer Forgot Password Strings -->
+    <string name="forgotPasswordTitle">FORGOT PASSWORD?</string>
+    <string name="forgotPasswordMessage">Provide your account\'s Mobile below for\nwhich you want to reset your password</string>
+    <string name="forgotPasswordMobileHint">Mobile</string>
+    <string name="forgotPasswordNextBtn">NEXT</string>
+
+
+    <!-- Retailer Make Selection Strings -->
+    <string name="makeSelectionTitle">MAKE\nSELECTION</string>
+    <string name="makeSelectionMsg">Select what contact detail should we be using to reset your password?!</string>
+    <string name="makeSelectionViaSmsTitle">via sms :</string>
+    <string name="makeSelectionViaSmsValueDefault">+919915462971</string>
+    <string name="makeSelectionViaEmailTitle">via mail :</string>
+    <string name="makeSelectionViaEmailValueDefault">developer.depository@gmail.com</string>
+
+
+    <!-- Retailer Set New Password Strings -->
+    <string name="setNewPasswordTitle">NEW CREDENTIALS</string>
+    <string name="setNewPasswordMsg">Your identity has been verified.\nSet your new password.</string>
+    <string name="setNewPasswordHint">New Password</string>
+    <string name="confirmNewPasswordHint">Confirm Password</string>
+    <string name="updatePasswordBtn">UPDATE</string>
+
+
+    <!-- Password Success Message Strings -->
+    <string name="setPasswordSuccessTitle">PASSWORD UPDATED</string>
+    <string name="setPasswordSuccessMsg">Your password has been updated!</string>
+    <string name="setPasswordSuccessLoginBtn">LOGIN</string>
+</resources>
