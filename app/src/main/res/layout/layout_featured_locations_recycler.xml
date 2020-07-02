@@ -41,7 +41,7 @@
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             android:includeFontPadding="false"
             app:layout_constraintEnd_toEndOf="parent"
@@ -71,12 +71,13 @@
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="@android:color/black"
-            android:textSize="12sp"
+            android:textSize="11sp"
             android:textStyle="normal"
             android:includeFontPadding="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/featured_location_item_rating" />
+            app:layout_constraintTop_toBottomOf="@+id/featured_location_item_rating"
+            tools:ignore="SmallSp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

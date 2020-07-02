@@ -1,6 +1,7 @@
 package com.developerdepository.scout.LocationOwner;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,15 +10,13 @@ import android.widget.TextView;
 
 import com.developerdepository.scout.Databases.SessionManager;
 import com.developerdepository.scout.R;
+import com.ismaeldivita.chipnavigation.ChipNavigationBar;
 
 import java.util.HashMap;
 
 public class RetailerDashboardActivity extends AppCompatActivity {
 
-    private TextView userDetails;
-    SessionManager sessionManager;
-
-    String name, username, email, password, gender, dateOfBirth, mobile;
+    ChipNavigationBar chipNavigationBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,29 +25,38 @@ public class RetailerDashboardActivity extends AppCompatActivity {
 
         //StatusBar Color
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-        getWindow().setStatusBarColor(getResources().getColor(android.R.color.white));
+        getWindow().setStatusBarColor(getResources().getColor(R.color.lightWhite));
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
 
-        sessionManager = new SessionManager(RetailerDashboardActivity.this, SessionManager.SESSION_USERSESSION);
-        HashMap<String, String> user_details = sessionManager.getUsersDetailFromSession();
-
-        name = user_details.get(SessionManager.KEY_NAME);
-        username = user_details.get(SessionManager.KEY_USERNAME);
-        email = user_details.get(SessionManager.KEY_EMAIL);
-        password = user_details.get(SessionManager.KEY_PASSWORD);
-        gender = user_details.get(SessionManager.KEY_GENDER);
-        dateOfBirth = user_details.get(SessionManager.KEY_DATEOFBIRTH);
-        mobile = user_details.get(SessionManager.KEY_MOBILE);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new RetailerDashboardFragment()).commit();
 
         initViews();
-        setActionOnViews();
+        bottomMenu();
     }
 
     private void initViews() {
-        userDetails = findViewById(R.id.retailer_dashboard_user_details);
+        chipNavigationBar = findViewById(R.id.retailer_dashboard_bottom_nav);
     }
 
-    private void setActionOnViews() {
-        userDetails.setText(String.format("%s\n%s\n%s\n%s\n%s\n%s\n%s", name, username, email, password, gender, dateOfBirth, mobile));
+    private void bottomMenu() {
+        chipNavigationBar.setItemSelected(R.id.bottom_nav_dashboard, true);
+        chipNavigationBar.setOnItemSelectedListener(new ChipNavigationBar.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(int i) {
+                Fragment fragment = null;
+                switch (i) {
+                    case R.id.bottom_nav_dashboard :
+                        fragment = new RetailerDashboardFragment();
+                        break;
+                    case R.id.bottom_nav_manage :
+                        fragment = new RetailerManageFragment();
+                        break;
+                    case R.id.bottom_nav_profile :
+                        fragment = new RetailerProfileFragment();
+                        break;
+                }
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
+            }
+        });
     }
 }
