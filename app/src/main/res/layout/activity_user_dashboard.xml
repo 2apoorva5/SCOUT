@@ -30,18 +30,18 @@
 
         <ImageButton
             android:id="@+id/dashboard_menu"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
             android:layout_marginStart="12dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_dashboard_menu"
-            android:padding="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_navigation_menu"
+            app:tint="@android:color/black"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/add_places_btn"
-            app:layout_constraintBottom_toBottomOf="@+id/add_places_btn"/>
+            app:layout_constraintBottom_toBottomOf="@+id/add_places_btn" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/add_places_btn"
@@ -56,16 +56,17 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="44dp"
-                android:layout_height="44dp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:background="@color/add_places_btn_background"
-                android:scaleType="centerInside"
+                android:scaleType="centerCrop"
                 android:src="@drawable/ic_add_places"
-                android:padding="8dp"
+                app:tint="@android:color/black"
+                android:padding="4dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -127,9 +128,9 @@
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_marginTop="12dp"
                             android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="8dp"
+                            android:layout_marginBottom="12dp"
                             android:alpha="0.5"
                             android:fontFamily="@font/poppins"
                             android:text="@string/search_text"
@@ -146,13 +147,14 @@
 
                         <ImageView
                             android:id="@+id/search_img"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="16dp"
                             android:layout_marginBottom="8dp"
                             android:scaleType="centerInside"
                             android:src="@drawable/ic_search"
+                            app:tint="@android:color/black"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -187,6 +189,7 @@
                             android:padding="16dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_restaurant"
+                            app:tint="@android:color/black"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -222,6 +225,7 @@
                             android:padding="16dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_hotel"
+                            app:tint="@android:color/black"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -257,6 +261,7 @@
                             android:padding="16dp"
                             android:scaleType="centerCrop"
                             android:src="@drawable/ic_education"
+                            app:tint="@android:color/black"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -291,7 +296,8 @@
                             android:layout_height="match_parent"
                             android:padding="16dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/ic_shop"
+                            android:src="@drawable/ic_shops"
+                            app:tint="@android:color/black"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"

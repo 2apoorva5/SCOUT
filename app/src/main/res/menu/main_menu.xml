@@ -74,7 +74,7 @@
                 <item
                     android:id="@+id/nav_restaurants"
                     android:title="@string/navRestaurants"
-                    android:icon="@drawable/ic_menu_restaurants"
+                    android:icon="@drawable/ic_menu_restaurant"
                     android:iconTint="@android:color/black"
                     android:orderInCategory="1000"/>
 
@@ -127,7 +127,7 @@
                 <item
                     android:id="@+id/nav_contact_us"
                     android:title="@string/navContactUs"
-                    android:icon="@drawable/ic_menu_contact"
+                    android:icon="@drawable/ic_menu_help_support"
                     android:iconTint="@android:color/black"
                     android:orderInCategory="1700"/>
 

@@ -87,14 +87,14 @@
             android:id="@+id/next_btn"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="48dp"
             android:background="?attr/selectableItemBackgroundBorderless"
             android:clickable="true"
             android:focusable="true"
-            android:padding="4dp"
-            android:scaleType="centerInside"
+            android:scaleType="centerCrop"
             android:src="@drawable/ic_next_arrow"
+            app:tint="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 

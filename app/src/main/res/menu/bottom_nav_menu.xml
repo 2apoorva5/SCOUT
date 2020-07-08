@@ -5,19 +5,25 @@
     <item
         android:id="@+id/bottom_nav_dashboard"
         android:title="Dashboard"
-        android:icon="@drawable/ic_bottom_menu_dashboard"
-        app:cnb_backgroundColor="@color/colorPrimary" />
+        android:icon="@drawable/ic_bottom_nav_dashboard"
+        app:cnb_backgroundColor="@android:color/black"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        app:cnb_textColor="@color/colorPrimaryDark" />
 
     <item
         android:id="@+id/bottom_nav_manage"
         android:title="Manage"
-        android:icon="@drawable/ic_bottom_menu_manage"
-        app:cnb_backgroundColor="@color/colorPrimary" />
+        android:icon="@drawable/ic_bottom_nav_manage"
+        app:cnb_backgroundColor="@android:color/black"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        app:cnb_textColor="@color/colorPrimaryDark" />
 
     <item
         android:id="@+id/bottom_nav_profile"
         android:title="Profile"
-        android:icon="@drawable/ic_bottom_menu_profile"
-        app:cnb_backgroundColor="@color/colorPrimary" />
+        android:icon="@drawable/ic_bottom_nav_profile"
+        app:cnb_backgroundColor="@android:color/black"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        app:cnb_textColor="@color/colorPrimaryDark" />
 
 </menu>

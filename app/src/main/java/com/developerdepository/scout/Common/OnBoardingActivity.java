@@ -1,11 +1,7 @@
 package com.developerdepository.scout.Common;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
@@ -16,6 +12,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import com.developerdepository.scout.HelperClasses.SliderAdapter;
 import com.developerdepository.scout.R;
@@ -104,7 +103,7 @@ public class OnBoardingActivity extends AppCompatActivity {
 
         for(int i = 0; i < dash.length; i++) {
             dash[i] = new TextView(OnBoardingActivity.this);
-            dash[i].setText(Html.fromHtml("&#8211;"));
+            dash[i].setText(Html.fromHtml("&#183;"));
             dash[i].setTextSize(35);
             dash[i].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
             dash[i].setAlpha(0.40f);
@@ -114,6 +113,9 @@ public class OnBoardingActivity extends AppCompatActivity {
         }
 
         if(dash.length > 0) {
+            dash[position].setText(Html.fromHtml("&#8211;"));
+            dash[position].setTextSize(35);
+            dash[position].setTypeface(Typeface.defaultFromStyle(Typeface.BOLD));
             dash[position].setAlpha(1.0f);
             dash[position].setTextColor(getResources().getColor(R.color.colorPrimaryDark));
         }
