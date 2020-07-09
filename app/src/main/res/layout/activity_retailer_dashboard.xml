@@ -5,23 +5,119 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/lightWhite"
-    android:id="@+id/fragment_container"
     tools:context=".LocationOwner.RetailerDashboardActivity">
 
-    <com.ismaeldivita.chipnavigation.ChipNavigationBar
-        android:id="@+id/retailer_dashboard_bottom_nav"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_container"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        app:cnb_menuResource="@menu/bottom_nav_menu"
-        app:cnb_unselectedColor="@android:color/black"
-        app:cnb_orientationMode="horizontal"
-        android:elevation="8dp"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp"
-        app:cnb_textAppearance="@style/BottomNavText"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/bottom_bar_container_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:fabCradleMargin="8dp"
+            app:elevation="8dp"
+            app:backgroundTint="@android:color/black"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottom_navigation_container"
+                android:layout_width="match_parent"
+                android:layout_height="56dp">
+
+                <ImageButton
+                    android:id="@+id/bottom_nav_dashboard"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_bottom_nav_dashboard"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintBottom_toTopOf="@+id/bottom_nav_dashboard_dot"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/bottom_nav_middle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/bottom_nav_dashboard_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_bottom_nav_dot"
+                    android:tint="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/bottom_nav_dashboard"
+                    app:layout_constraintStart_toStartOf="@+id/bottom_nav_dashboard"
+                    app:layout_constraintTop_toBottomOf="@+id/bottom_nav_dashboard" />
+
+                <ImageButton
+                    android:id="@+id/bottom_nav_middle"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:visibility="gone"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/bottom_nav_profile"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="24dp"
+                    android:src="@drawable/ic_bottom_nav_profile"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:tint="@color/inactiveBottomNavColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/bottom_nav_middle"
+                    app:layout_constraintBottom_toTopOf="@+id/bottom_nav_profile_dot"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/bottom_nav_profile_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_bottom_nav_dot"
+                    android:tint="@color/inactiveBottomNavColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/bottom_nav_profile"
+                    app:layout_constraintStart_toStartOf="@+id/bottom_nav_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/bottom_nav_profile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_btn_add"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            app:backgroundTint="@android:color/black"
+            android:src="@drawable/ic_fab_manage"
+            app:maxImageSize="24dp"
+            app:tint="@color/inactiveBottomNavColor"
+            app:layout_anchor="@+id/bottom_app_bar" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
