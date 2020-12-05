@@ -1,8 +1,5 @@
 package com.developerdepository.scout.Common.LoginSignup;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -17,14 +14,15 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.chaos.view.PinView;
 import com.developerdepository.scout.Databases.UserHelperClass;
 import com.developerdepository.scout.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.gms.tasks.TaskExecutors;
 import com.google.firebase.FirebaseException;
 import com.google.firebase.FirebaseTooManyRequestsException;
 import com.google.firebase.auth.AuthResult;
@@ -239,7 +237,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                 mobile,
                 60,
                 TimeUnit.SECONDS,
-                TaskExecutors.MAIN_THREAD,
+                VerifyOTPActivity.this,
                 mCallbacks
         );
     }
@@ -250,7 +248,7 @@ public class VerifyOTPActivity extends AppCompatActivity {
                 mobile,
                 60,
                 TimeUnit.SECONDS,
-                TaskExecutors.MAIN_THREAD,
+                VerifyOTPActivity.this,
                 mCallbacks, resendingToken);
     }
 
